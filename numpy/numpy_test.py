@@ -1,5 +1,13 @@
 import numpy as np
 from tempfile import TemporaryFile
+import matplotlib.pyplot as plt
+
+print (np.zeros((3, 4)))
+print (np.ones((3, 4)))
+print (np.full((3, 4), 17))
+
+
+print (np.linspace(1, 10, num=10))
 
 #矩陣運算
 a = np.array([[1,5],
@@ -74,12 +82,13 @@ a=np.array([1,1,1])
 b=np.array([2,2,2])
 c=np.vstack((a,b)) #vertical stack
 d=np.hstack((a,b)) #horizontal stack
-print(c)  
-print(d)
 print(a.shape, c.shape, d.shape)
 
 print(a[np.newaxis,:])
 print(a[np.newaxis,:].shape)
+
+#單一維度作完transpose仍為一樣
+print(a.T)
 print(a[:,np.newaxis])
 print(a[:,np.newaxis].shape)
 
@@ -116,5 +125,31 @@ b is a
 b = a.copy() #deep copy
 b is a
 
+#HW0
+a=np.random.randint(1,10,(1,50))
+b=np.random.randint(1,5,(50,10))
+c=a.dot(b)
+d=np.sort(c,axis=None)
+
+np.savetxt('./result.txt',d,delimiter=',',fmt='%-3.0f')
 
 
+x, y = np.meshgrid(np.arange(-3, 4), np.arange(-2,3))
+contor = np.sqrt(x ** 2 + y ** 2)
+plt.imshow(contor)
+plt.colorbar()
+
+x = np.arange(-5, 5, 0.1)
+y = np.arange(-5, 5, 0.1)
+xx, yy = np.meshgrid(x, y)
+z = np.sin(xx**2 + yy**2) / (xx**2 + yy**2)
+h = plt.contourf(x,y,z)
+
+
+xvalues = np.array([1,2,3,4]);
+yvalues = np.array([5,6,7]);
+xx, yy = np.meshgrid(xvalues, yvalues)
+print(xx)
+print(yy)
+plt.plot(xx, yy, marker='.', color='k', linestyle='none')
+plt.show()
