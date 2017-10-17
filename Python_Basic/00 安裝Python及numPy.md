@@ -8,10 +8,10 @@ Python 可以在 `https://www.python.org/` 下載, <br>
 
 下載後執行安裝程式, <br>
 安裝時可選擇 Customize Installation, 如下:<p>
-![GitHub Logo](/images/install01.jpg)
+![GitHub Logo](/Python_Basic/images/install01.jpg)
 
 加選 Add Python to environment variables 項目, 如下:<p>
-![GitHub Logo](/images/install02.jpg)
+![GitHub Logo](/Python_Basic/images/install02.jpg)
 
 
 ## 修改系統中的環境變數
@@ -59,16 +59,16 @@ pip install pandas-0.19.1-cp35-cp35m-win_amd64.whl
 pip install libsvm-3.21-cp35-cp35m-win_amd64.whl
 ```
 安裝畫面如下:<p>
-![GitHub Logo](/images/install03.jpg)
+![GitHub Logo](/Python_Basic/images/install03.jpg)
 
 ## 關於libsvm
 參考: https://github.com/cjlin1/libsvm/tree/master/python
 
 
 ## 安裝 Anaconda<p>
-![GitHub Logo](/images/install04.jpg)
+![GitHub Logo](/Python_Basic/images/install04.jpg)
 
 
 ## Anaconda 啟用虛擬環境<p>
-![GitHub Logo](/images/install05.jpg)<p>
-![GitHub Logo](/images/install06.jpg)<p>
+![GitHub Logo](/Python_Basic/images/install05.jpg)<p>
+![GitHub Logo](/Python_Basic/images/install06.jpg)<p>
