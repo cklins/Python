@@ -70,5 +70,5 @@ pip install libsvm-3.21-cp35-cp35m-win_amd64.whl
 
 
 ## Anaconda 啟用虛擬環境<p>
-![GitHub Logo](/Python_Basic/images/install05.jpg)<p>
-![GitHub Logo](/Python_Basic/images/install06.jpg)<p>
+![GitHub Logo](/Python_Basic/images/install05.jpg)
+![GitHub Logo](/Python_Basic/images/install06.jpg)
