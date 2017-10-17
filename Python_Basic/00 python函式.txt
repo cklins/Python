@@ -1,0 +1,52 @@
+
+*-- range()
+ -- zip()
+ -- len()
+
+
+*-- numpy ---- dot()         
+            -- msort() 		
+            -- where()        
+            -- mean()       
+            -- std()           
+            -- concatenate()
+            -- genfromtxt()
+            -- array()
+            -- arange()
+            -- ones()  
+            -- ndarray()
+            -- zeros()  
+            -- identity()
+           |
+            -- ndarray ---- clip()
+           |             -- transpose()   
+           |             -- shape
+           |             -- reshape()
+           | 
+            -- random  ---- rand()
+           |             -- randint()
+           |             -- randn()   
+           |             -- normal()
+           |             --shuffle()
+           |               
+            -- linalg  ---- inv()
+	                 -- norm()
+	
+	
+*-- scipy ---- polyfit()
+            -- poly1d()
+            -- linespace()
+
+			
+*-- sklearn -- datasets -- load_mlcomp()
+            -- feature_extraction -- text -- CountVectorizer
+                                          -- TfidfVectorizer
+            -- cluster -- KMeans
+            -- naive_bayes		
+
+			
+*-- nltk -- stem
+
+ 
+*-- matplotlib -- pyplot
+		
