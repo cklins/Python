@@ -7,7 +7,9 @@ from mpl_toolkits.mplot3d import Axes3D
 x = np.linspace(-1, 1, 50)
 y = 2*x + 1
 # y = x**2
-plt.plot(x, y)
+plt.plot(x, y, label='y=2*x+1')
+plt.plot(y, x, label='y=(x-1)/2')
+plt.legend()
 plt.show()
 
 
@@ -213,7 +215,7 @@ plt.show()
 #8 scatter 散点图
 
 mu, sigma = 1, 0.1 # mean and standard deviation
-s = np.random.normal(mu, sigma, 1000)
+s = np.random.normal(mu, sigma, 100)
 
 count, bins, ignored = plt.hist(s, 30, normed=True)
 plt.plot(bins, 1/(sigma * np.sqrt(2 * np.pi)) * np.exp( - (bins - mu)**2 / (2 * sigma**2) ),
@@ -232,6 +234,10 @@ plt.xlim(-1.5, 1.5)
 plt.xticks(())  # ignore xticks
 plt.ylim(-1.5, 1.5)
 plt.yticks(())  # ignore yticks
+plt.show()
+
+plt.plot([2,3,4,5],color='red', linewidth=1.0, linestyle='--',)
+plt.scatter([0,1,2,3],[1, 2, 3, 4])
 plt.show()
 
 #9 bar 柱状图
@@ -395,3 +401,20 @@ plt.plot([0, 1], [0, 4])
 
 plt.tight_layout()
 plt.show()
+
+
+data = {'a': np.arange(50),
+        'c': np.random.randint(0, 50, 50),
+        'd': np.random.randn(50)}
+data['b'] = data['a'] + 10 * np.random.randn(50)
+data['d'] = np.abs(data['d']) * 100
+
+plt.scatter('a', 'b', c='c', s='d', data=data)
+plt.xlabel('entry a')
+plt.ylabel('entry b')
+plt.show()
+
+fig = plt.figure()  # an empty figure with no axes
+fig.suptitle('No axes on this figure')  # Add a title so we know which it is
+
+fig, ax_lst = plt.subplots(2, 2)  # a figure with a 2x2 grid of Axes
