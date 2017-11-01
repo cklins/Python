@@ -163,7 +163,14 @@ for folder in os.listdir():
 
 
 
-
+str = 'Hello World'
+stt1 = 'Hell'
+stt2 = '\w*'
+stt3 = stt1+stt2
+pattern = re.compile(stt3)
+match = pattern.match(str)
+if match:
+    print(match.group())
 
 
 
